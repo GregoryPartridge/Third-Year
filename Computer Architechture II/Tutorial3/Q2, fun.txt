@@ -1,0 +1,23 @@
+fun:		sub r27, r0, r0 {c}		; b == 0
+		jeq fun1			; jump to fun1 if equal
+		add r0, r0, r1			; set result as 0 in delay
+		add r27, r0, r10		; set up parameter (b)
+		callr r15, mod			; call mod
+		xor r0, r0, r0			; nop in delay slot
+		sub r27, r0, r0 {c}		; b % 2 == 0
+		jeq fun2			; jump to fun2 if equal
+		add r27, r0, r10		; set up parameter (b)
+		callr r15, div			; call div
+		add r31, r0, r11		; set up parameter (b/2)
+		callr r15, fun			; call fun
+		add r26, r26, r10		; set up parameter (a + a) in delay slot
+		add r1, r26, r1			; add (a) to result of fun(a + a, b/2)
+		ret r31, 0			; return
+		xor r0, r0, r0			; nop in delay slot
+fun2		add r27, r0, r10		; set up parameter (b)
+		callr r15, div			; call div
+		add r31, r0, r11		; set up parameter (b/2)
+		callr r15, fun			; call fun
+		add r26, r26, r10		; set up parameter (a + a) in delay slot
+fun1:		ret r31, 0			; return
+		xor r0, r0, r0			; nop in delay slot

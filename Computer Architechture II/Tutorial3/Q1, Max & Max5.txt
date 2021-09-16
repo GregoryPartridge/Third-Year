@@ -1,0 +1,26 @@
+		add r0, #4, r9			; initialise r9
+
+
+max:	add r26, r0, r1				; use r1 for local v (function result returned in r1)
+		sub r27, r1, r0 {C}		; b > v
+		jle max1			; if true jump to max1
+		xor r0, r0, r0			; nop in delay slot
+		add r27, r0, r1			; v = b
+max1:	sub r28, r1, r0 {C}			; c > v
+ 		jle max2			; if true jump to max2
+		xor r0, r0, r0			; nop in delay slot
+		add r28, r0, r1			; v = b
+max2:	ret r31, 0				; return
+		xor r0, r0, r0			; nop in delay slot
+
+
+max5:	add r9, r0, r10				; move first parameter to r10
+		add r26, r0, r11		; move second parameter to r11
+		callr r15, max			; call max (save return address in r31)
+		add r27, r0, r12		; move third parameter to r12 in delay spot
+		add r31, r0, r10		; move first parameter to r10 (value returned from max in r31)
+		add r28, r0, r11		; move second parameter to r11
+		callr r15, max			; call max (save return address in r31)
+		add r29, r0. r12		; move third parameter to r12 in delay spot
+		ret r31, 0			; return result in r1
+		xor r0, r0, r0			; nop in delay slot

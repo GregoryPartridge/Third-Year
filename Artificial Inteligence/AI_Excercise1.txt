@@ -1,0 +1,16 @@
+arc([H|T],Node,Cost,KB) :- member([H|B],KB), append(B,T,Node),
+length(B,L), Cost is 1+ L/(L+1).
+heuristic(Node,H) :- length(Node,H).
+goal([]).
+
+astar(Node,Path,Cost,KB) :- astar1([[Node,0,[Node]]], Path, Cost, KB).
+
+astar1([[X,Y,Z]|_],Z1,C,_) :- goal(X),Z1=Z,C=Y.
+astar1([[X,Y,Z]|T],Z1,C,KB) :- findall([A,C1,Z2],(arc(X,A,C2,KB),append(Z,[A],Z2),
+    C1 is C2+Y),B),add2frontier(B,T,New), astar1(New, Z1,C,KB).
+
+add2frontier(X, Y, Z) :- append(X, Y, X1), predsort(cheaper,X1, Z).
+
+cheaper(>, [X,Y,_], [X1,Y1,_]) :- heuristic(X,Z), heuristic(X1,Z1), F1 is Y+Z, F2 is Y1+Z1,F1 > F2.
+
+cheaper(<, [X,Y,_], [X1,Y1,_]) :- heuristic(X,Z), heuristic(X1,Z1), F1 is Y+Z, F2 is Y1+Z1,F1 =< F2.

@@ -1,0 +1,37 @@
+%{
+int even_num = 0;
+int holder = 0;
+%}
+
+%%
+
+[0-9]+  {holder = atoi(yytext); if(holder%2 == 0) even_num++;}
+\n      {}
+
+%%
+
+int main()
+{
+    yylex();
+    printf("%8d",even_num);
+    return 0;
+}
+
+
+%{
+int count = 0;
+}%
+
+%%
+[0-9]*[02468][[:SPACE:]]      { count++; }
+[0-9]*[02468][ \n]+     { count++; }
+\n     ;
+.       ;
+
+%%
+
+int main() {
+yylex();
+printf("%d\n", count);
+return 0;
+}

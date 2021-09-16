@@ -1,0 +1,25 @@
+
+%{
+char text[1000];
+int open_comments = 0;
+int error = 0;
+%}
+
+%%
+
+[*][*][^\n]*[\n]	{ if(open_comments == 0) strcat(text, "\n");}
+[{]				{ open_comments++;}
+[}]				{ if (open_comments <= 0) open_comments = -1; if open_comments > 0) open_comments = 0;}
+["][^"]*["]		{ if(open_comments == 0) strcat(text, yytext); }
+\n				{ if(open_comments == 0) strcat(text, "\n"); }
+.				{ if(open_comments == 0) strcat(text, yytext); }
+
+%%
+
+int main()
+{
+    yylex();
+	printf("%s", text);
+	if(open_comments != 0 || error != 0) printf("syntax error\n");
+    return 0;
+}

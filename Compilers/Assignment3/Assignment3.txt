@@ -1,0 +1,24 @@
+%{
+char text[1000];
+
+%}
+
+NUMBER [1-9][0-9]?[0-9]?[0-9]?[0-9]?[0-9]?
+OLDCOUNTY  C|CE|CN|CW|D|DL|G|KE|KK|KY|L|LK|LD|LH|LM|LS|MH|MN|MO|OY|RN|SO|TN|TS|W|WD|WH|WX|WW
+NEWCOUNTY C|CE|CN|CW|D|DL|G|KE|KK|KY|L|LD|LH|LM|LS|MH|MN|MO|OY|RN|SO|T|W|WH|WX|WW
+OLDYEAR  [0-9][0-9]
+NEWYEAR [0-9][0-9][1-2]
+%%
+{OLDYEAR}(-){OLDCOUNTIES}(-){NUMBER}	{strcat(text, "OLD\n");}
+{NEWYEAR}(-){NEWCOUNTIES}(-){NUMBER}	{strcat(text, "NEW\n");}
+[\n]									{}
+.                   					{}
+
+%%
+
+int main()
+{
+    yylex();
+    printf("%s", text);
+    return 0;
+}

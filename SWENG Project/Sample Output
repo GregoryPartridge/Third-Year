@@ -1,0 +1,353 @@
+(venv) C:\Users\grego\PycharmProjects\APISweng>python APISweng.py
+Python
+     Java: 8
+     JavaScript: 3
+     HTML: 1
+     CSS: 3
+     Assembly: 1
+     VHDL: 1
+     Go: 1
+     C#: 1
+     Dart: 1
+     C++: 0
+     R: 0
+     Haskell: 1
+     Lex: 0
+     TSQL: 0
+     Prolog: 0
+
+
+Java
+     Python: 8
+     JavaScript: 5
+     HTML: 3
+     CSS: 3
+     Assembly: 2
+     VHDL: 2
+     Go: 2
+     C#: 1
+     Dart: 1
+     C++: 1
+     R: 1
+     Haskell: 1
+     Lex: 1
+     TSQL: 1
+     Prolog: 1
+
+
+JavaScript
+     Python: 3
+     Java: 5
+     HTML: 2
+     CSS: 2
+     Assembly: 1
+     VHDL: 0
+     Go: 1
+     C#: 1
+     Dart: 1
+     C++: 1
+     R: 0
+     Haskell: 1
+     Lex: 0
+     TSQL: 0
+     Prolog: 0
+
+
+HTML
+     Python: 1
+     Java: 3
+     JavaScript: 2
+     CSS: 0
+     Assembly: 0
+     VHDL: 0
+     Go: 0
+     C#: 0
+     Dart: 0
+     C++: 1
+     R: 0
+     Haskell: 0
+     Lex: 0
+     TSQL: 0
+     Prolog: 0
+
+
+CSS
+     Python: 3
+     Java: 3
+     JavaScript: 2
+     HTML: 0
+     Assembly: 1
+     VHDL: 1
+     Go: 1
+     C#: 0
+     Dart: 1
+     C++: 0
+     R: 0
+     Haskell: 0
+     Lex: 0
+     TSQL: 0
+     Prolog: 0
+
+
+Assembly
+     Python: 1
+     Java: 2
+     JavaScript: 1
+     HTML: 0
+     CSS: 1
+     VHDL: 1
+     Go: 1
+     C#: 0
+     Dart: 1
+     C++: 0
+     R: 0
+     Haskell: 0
+     Lex: 1
+     TSQL: 1
+     Prolog: 1
+
+
+VHDL
+     Python: 1
+     Java: 2
+     JavaScript: 0
+     HTML: 0
+     CSS: 1
+     Assembly: 1
+     Go: 1
+     C#: 0
+     Dart: 0
+     C++: 0
+     R: 0
+     Haskell: 0
+     Lex: 1
+     TSQL: 1
+     Prolog: 1
+
+
+Go
+     Python: 1
+     Java: 2
+     JavaScript: 1
+     HTML: 0
+     CSS: 1
+     Assembly: 1
+     VHDL: 1
+     C#: 0
+     Dart: 0
+     C++: 0
+     R: 0
+     Haskell: 0
+     Lex: 1
+     TSQL: 1
+     Prolog: 1
+
+
+C#
+     Python: 1
+     Java: 1
+     JavaScript: 1
+     HTML: 0
+     CSS: 0
+     Assembly: 0
+     VHDL: 0
+     Go: 0
+     Dart: 0
+     C++: 0
+     R: 0
+     Haskell: 1
+     Lex: 0
+     TSQL: 0
+     Prolog: 0
+
+
+Dart
+     Python: 1
+     Java: 1
+     JavaScript: 1
+     HTML: 0
+     CSS: 1
+     Assembly: 1
+     VHDL: 0
+     Go: 0
+     C#: 0
+     C++: 0
+     R: 0
+     Haskell: 0
+     Lex: 0
+     TSQL: 0
+     Prolog: 0
+
+
+C++
+     Python: 0
+     Java: 1
+     JavaScript: 1
+     HTML: 1
+     CSS: 0
+     Assembly: 0
+     VHDL: 0
+     Go: 0
+     C#: 0
+     Dart: 0
+     R: 0
+     Haskell: 0
+     Lex: 0
+     TSQL: 0
+     Prolog: 0
+
+
+R
+     Python: 0
+     Java: 1
+     JavaScript: 0
+     HTML: 0
+     CSS: 0
+     Assembly: 0
+     VHDL: 0
+     Go: 0
+     C#: 0
+     Dart: 0
+     C++: 0
+     Haskell: 0
+     Lex: 0
+     TSQL: 0
+     Prolog: 0
+
+
+Haskell
+     Python: 1
+     Java: 1
+     JavaScript: 1
+     HTML: 0
+     CSS: 0
+     Assembly: 0
+     VHDL: 0
+     Go: 0
+     C#: 1
+     Dart: 0
+     C++: 0
+     R: 0
+     Lex: 0
+     TSQL: 0
+     Prolog: 0
+
+
+Lex
+     Python: 0
+     Java: 1
+     JavaScript: 0
+     HTML: 0
+     CSS: 0
+     Assembly: 1
+     VHDL: 1
+     Go: 1
+     C#: 0
+     Dart: 0
+     C++: 0
+     R: 0
+     Haskell: 0
+     TSQL: 1
+     Prolog: 1
+
+
+TSQL
+     Python: 0
+     Java: 1
+     JavaScript: 0
+     HTML: 0
+     CSS: 0
+     Assembly: 1
+     VHDL: 1
+     Go: 1
+     C#: 0
+     Dart: 0
+     C++: 0
+     R: 0
+     Haskell: 0
+     Lex: 1
+     Prolog: 1
+
+
+Prolog
+     Python: 0
+     Java: 1
+     JavaScript: 0
+     HTML: 0
+     CSS: 0
+     Assembly: 1
+     VHDL: 1
+     Go: 1
+     C#: 0
+     Dart: 0
+     C++: 0
+     R: 0
+     Haskell: 0
+     Lex: 1
+     TSQL: 1
+
+
+Python
+Most used: Java
+Times Used: 8
+---
+Java
+Most used: Python
+Times Used: 8
+---
+JavaScript
+Most used: Java
+Times Used: 5
+---
+HTML
+Most used: Java
+Times Used: 3
+---
+CSS
+Most used: Python
+Times Used: 3
+---
+Assembly
+Most used: Java
+Times Used: 2
+---
+VHDL
+Most used: Java
+Times Used: 2
+---
+Go
+Most used: Java
+Times Used: 2
+---
+C#
+Most used: Python
+Times Used: 1
+---
+Dart
+Most used: Python
+Times Used: 1
+---
+C++
+Most used: Java
+Times Used: 1
+---
+R
+Most used: Java
+Times Used: 1
+---
+Haskell
+Most used: Python
+Times Used: 1
+---
+Lex
+Most used: Java
+Times Used: 1
+---
+TSQL
+Most used: Java
+Times Used: 1
+---
+Prolog
+Most used: Java
+Times Used: 1
+---
